@@ -1,8 +1,7 @@
 "use strict"
 
-const bike = [];
+const bike = ['tvs', 'honda'];
 
-bike.push('tvs');
-bike.push('honda');
+bike = 'bmw';
 
 console.log(bike);
