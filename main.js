@@ -11,3 +11,5 @@ class User {
         console.log(this.username + 'registerd succesfully');
     }
 }
+
+let bhargav = new User('bhargav', 'bhargavraju98@gmail.com', '123@98');
