@@ -1,5 +1,7 @@
 "use strict"
 
-let name = 'bhargav';
+function capitalize(text) {
+    return text.toUpperCase();
+}
 
-console.log(`hello ${name}`);
+console.log(`hello ${capitalize('bhargav')}`);
