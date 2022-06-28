@@ -1,7 +1,9 @@
 "use strict"
 
-const bike = ['tvs', 'honda'];
-
-bike = 'bmw';
-
-console.log(bike);
+class User {
+    constructor(username, useremail, password) {
+        this.username = username;
+        this.useremail = useremail;
+        this.userpassword = password;
+    }
+}
