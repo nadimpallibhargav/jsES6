@@ -7,11 +7,9 @@ class User {
         this.userpassword = password;
     }
 
-    register() {
-        console.log(this.username + ' registerd succesfully');
+    static countUsers() {
+        console.log('There are 50 users');
     }
 }
 
-let bhargav = new User('bhargav', 'bhargavraju98@gmail.com', '123@98');
-
-bhargav.register();
+User.countUsers();
