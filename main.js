@@ -12,8 +12,8 @@ class User {
     }
 }
 
-// inheriting User class 
 
+// inheriting User class 
 class Menber extends User {
     constructor(username, useremail, password, member) {
         super(username, useremail, password); // super() for using the parent class properties. Another way is to assign the parameters again (eg: this.username = username)
@@ -27,4 +27,5 @@ class Menber extends User {
 
 let bhargav = new Menber('bhargav', 'bhargavraju98', '123', 'prime');
 
+bhargav.register();
 bhargav.getMembership();
