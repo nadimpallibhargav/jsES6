@@ -6,4 +6,8 @@ class User {
         this.useremail = useremail;
         this.userpassword = password;
     }
+
+    register() {
+        console.log(this.username + 'registerd succesfully');
+    }
 }
