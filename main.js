@@ -1,14 +1,8 @@
 "use strict"
 
-function testLet(){
-    let a = 30;
-    if(true) {
-        let a = 50;
-        console.log(a);
-    }
+const bike = [];
 
-    console.log(a);
-}
+bike.push('tvs');
+bike.push('honda');
 
-testLet();
-
+console.log(bike);
