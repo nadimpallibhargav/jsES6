@@ -1,5 +1,12 @@
 "use strict"
 
-let aboutBhargav = 'Hi my name is bhargav';
+///////////// number methods /////////////
 
-console.log(aboutBhargav.includes('is'));
+//returns the hexa decimal value in numbers
+console.log(0xff);
+
+//returns the binary value in numbers
+console.log(0b101011);
+
+//returns the octal value in numbers
+console.log(0o543);
