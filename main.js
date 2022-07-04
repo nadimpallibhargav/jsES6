@@ -2,4 +2,4 @@
 
 let aboutBhargav = 'Hi my name is bhargav';
 
-console.log(aboutBhargav.endsWith('bhargav'));
+console.log(aboutBhargav.includes('is'));
