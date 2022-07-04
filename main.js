@@ -1,7 +1,7 @@
 "use strict"
 
-function Greet($message = 'Hello') {
-    console.log($message);
-}
+let arg1 = [1,2,3];
+let arg2 = [4,5,6];
+let arg3 = [...arg1,...arg2];
 
-Greet('Hi');
+console.log(arg3);
