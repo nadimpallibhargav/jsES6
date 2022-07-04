@@ -2,5 +2,8 @@
 
 ///////////// number methods /////////////
 
-// isNaN() method. Returns true if the value is Not a Number(NaN)
-console.log(Number.isNaN(NaN));
+// isInteger() method. Returns true if the value is 
+console.log(Number.isInteger(2));
+console.log(Number.isInteger(-2));
+console.log(Number.isInteger(String));
+console.log(Number.isInteger(Infinity));
