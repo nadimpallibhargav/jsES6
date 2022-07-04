@@ -2,6 +2,6 @@
 
 let personDetails = new Map([['name','bhargav'],['age','23']]);
 
-personDetails.set('height','6');
+personDetails.delete('height');
 
 console.log(personDetails);
