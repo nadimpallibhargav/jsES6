@@ -1,9 +1,7 @@
 "use strict"
 
-///////////// number methods /////////////
+function Greet($message = 'Hello') {
+    console.log($message);
+}
 
-// isInteger() method. Returns true if the value is 
-console.log(Number.isInteger(2));
-console.log(Number.isInteger(-2));
-console.log(Number.isInteger(String));
-console.log(Number.isInteger(Infinity));
+Greet('Hi');
