@@ -4,6 +4,6 @@ let marks = [34,25,34,48];
 
 let latestMarks = new Set(marks);
 
-latestMarks.add({age: 23, height: 6});
+latestMarks.delete(34);
 
 console.log(latestMarks);
