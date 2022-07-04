@@ -1,7 +1,5 @@
 "use strict"
 
-function capitalize(text) {
-    return text.toUpperCase();
-}
+let aboutBhargav = 'Hi my name is bhargav';
 
-console.log(`hello ${capitalize('bhargav')}`);
+console.log(aboutBhargav.startsWith('Hi'));
