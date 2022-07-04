@@ -2,11 +2,9 @@
 
 ///////////// number methods /////////////
 
-//returns the hexa decimal value in numbers
-console.log(0xff);
-
-//returns the binary value in numbers
-console.log(0b101011);
-
-//returns the octal value in numbers
-console.log(0o543);
+// isFinite() method
+console.log(Number.isFinite(3));
+console.log(Number.isFinite(-3));
+console.log(Number.isFinite(0));
+console.log(Number.isFinite(Infinity));
+console.log(Number.isFinite(NaN));
