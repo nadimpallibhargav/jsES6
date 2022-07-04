@@ -1,10 +1,7 @@
 "use strict"
 
-let arg1 = [1,2,3];
-let arg2 = [4,5,6];
+let marks = [34,25,34,48];
 
-function test() {
-    console.log(arg1 + ',' + arg2);
-}
+let latestMarks = new Set(marks);
 
-test(...arg1,...arg2);
+console.log(latestMarks);
