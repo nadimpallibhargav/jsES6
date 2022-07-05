@@ -1,20 +1,16 @@
 "use strict"
 
-let carWeakSet = new WeakSet();
+let carWeakMap = new WeakMap();
+
+let key1 = {
+    id: 1
+}
 
 let car1 = {
-    company: 'Honda',
+    company: 'honda',
     modal: 'city'
 }
 
-let car2 = {
-    company: 'Honda',
-    modal: 'civic'
-}
+carWeakMap.set(key1,car1);
 
-carWeakSet.add(car1);
-carWeakSet.add(car2);
-
-carWeakSet.delete(car1);
-
-console.log(carWeakSet);
+console.log(carWeakMap);
