@@ -21,4 +21,6 @@ let car2 = {
 carWeakMap.set(key1,car1);
 carWeakMap.set(key2,car2);
 
+carWeakMap.delete(key1);
+
 console.log(carWeakMap);
