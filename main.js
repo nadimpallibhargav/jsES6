@@ -1,5 +1,5 @@
 "use strict"
 
-let personDetails = new Map([['name','bhargav'],['age','23']]);
+let carWeakSet = new WeakSet();
 
-console.log(personDetails.size);
+console.log(carWeakSet);
