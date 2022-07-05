@@ -7,6 +7,14 @@ let car1 = {
     modal: 'city'
 }
 
+let car2 = {
+    company: 'Honda',
+    modal: 'civic'
+}
+
 carWeakSet.add(car1);
+carWeakSet.add(car2);
+
+carWeakSet.delete(car1);
 
 console.log(carWeakSet);
