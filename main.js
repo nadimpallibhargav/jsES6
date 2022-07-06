@@ -1,8 +1,5 @@
 "use strict"
 
-let add = (a,b) => {
-    let sum = a + b;
-    return sum;
-}
-
-console.log(add(3,4));
+// promises in js are similar to real life promises. 
+// If the promise was completed, then it is RESOLVED
+// If the promise was not done, then it is REJECTED
