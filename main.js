@@ -11,7 +11,7 @@ let myPromise = new Promise((resolve, reject) => {
         reject('FAILED');
     }
 
-});
+}); 
 
 myPromise.then((successMessage) => {
     console.log(`the promise was ${successMessage}`);
