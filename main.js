@@ -10,6 +10,6 @@ function *generatorFunction() {
 
 let steps = generatorFunction();
 
-console.log(steps.next().value);
-console.log(steps.next().value);
-console.log(steps.next());
+for(let allSteps of steps) {
+    console.log(allSteps);
+} 
