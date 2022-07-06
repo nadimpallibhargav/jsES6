@@ -12,3 +12,5 @@ function *generatorFunction() {
 }
 
 let steps = generatorFunction();
+
+console.log(steps.next());
