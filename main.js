@@ -13,4 +13,4 @@ function *generatorFunction() {
 
 let steps = generatorFunction();
 
-console.log(steps.next());
+console.log(steps.next().value);
