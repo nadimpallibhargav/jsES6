@@ -12,3 +12,9 @@ let myPromise = new Promise((resolve, reject) => {
     }
 
 });
+
+myPromise.then((successMessage) => {
+    console.log(`the promise was ${successMessage}`);
+}).catch((failedMessage) => {
+    console.log(`the promise was ${failedMessage}`);
+})
