@@ -10,3 +10,5 @@ function *generatorFunction() {
     console.log('bhargav');
     yield 'step 4';
 }
+
+let steps = generatorFunction();
