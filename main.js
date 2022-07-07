@@ -1,15 +1,7 @@
 "use strict"
 
-function *generatorFunction() {
-    console.log('hi');
-    yield 'step 1';
-    console.log('this');
-    yield 'step 2';
-    return 'completed';
-}
+const ages = [23,28,3,21,45];
 
-let steps = generatorFunction();
+const sortAges = ages.sort();
 
-for(let allSteps of steps) {
-    console.log(allSteps);
-} 
+console.log(sortAges);
