@@ -1,7 +1,15 @@
 "use strict"
 
-const ages = [23,28,3,21,45];
+const companies = [
+    {
+        name: 'infosys',
+        start: 1990,
+        end: 2022
+    }
+];
 
-const sumOfAges = ages.reduce( (total, nextage) => (total + nextage), 10 );
+const totalYearsOfCompany = companies.reduce(
+    (total, years) => (total + (years.end - years.start)), 0
+);
 
-console.log(sumOfAges);
+console.log(totalYearsOfCompany)
