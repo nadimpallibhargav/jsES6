@@ -1,7 +1,20 @@
 "use strict"
 
-const ages = [23,28,3,21,45];
+const companies = [
+    {
+        name: 'infosys',
+        start: 1990
+    },
+    {
+        name: 'tata',
+        start: 1970
+    },
+    {
+        name: 'mahindhra',
+        start: 2000
+    },
+]
 
-const sortAges = ages.sort((a,b) => (a - b));
+const sortByYear = companies.sort((a, b) => (a.start > b.start ? 1 : -1));
 
-console.log(sortAges); 
+console.log(sortByYear); 
