@@ -21,12 +21,11 @@ function blogRequest() {
     }, 1000);
 }
 
-blogRequest();
-
-function addBlogPost(addPost) {
+function addBlogPost(addPost, blogRequestCallBack) {
     setTimeout(() => {
         blogPosts.push(addPost);
+        blogRequestCallBack();
     }, 2000);
 }
 
-addBlogPost({name: 'third blog post', content: 'content for the blog post three'});
+addBlogPost({name: 'third blog post', content: 'content for the blog post three'}, blogRequest);
