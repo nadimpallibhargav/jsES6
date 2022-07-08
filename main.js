@@ -1,15 +1,7 @@
 "use strict"
 
-const companies = [
-    {
-        name: 'infosys',
-        start: 1990,
-        end: 2022
-    }
-];
+const ages = [23,28,3,21,45];
 
-const totalYearsOfCompany = companies.reduce(
-    (total, years) => (total + (years.end - years.start)), 0
-);
+let filterAges = ages.map(age => age * 2).filter(age => age >= 20).sort((a, b) => a - b ).reduce((a, b) => (a + b), 0);
 
-console.log(totalYearsOfCompany)
+console.log(filterAges);
