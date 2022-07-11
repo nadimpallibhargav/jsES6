@@ -1,9 +1,47 @@
 "use strict"
 
-const user = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json());
+const blogPosts = [
+    {
+        title: 'first blog post',
+        content: 'content for the blog post one'
+    },
+    {
+        title: 'second blog post',
+        content: 'content for the blog post two'
+    },
+];
 
-Promise.all([user]).then(values => 
+function blogRequest() {
+    setTimeout(() => {
+        let blogTitle = '';
+        blogPosts.forEach(singleBlogs => {
+            blogTitle += `<li>${singleBlogs.title}</li>`;
+        });
+        document.querySelector('body').innerHTML = blogTitle;
+    }, 1000);
+}
 
-    console.log(values)
-    
-);
+function addBlogPost(addPost) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            blogPosts.push(addPost);
+
+            const error = false;
+
+            if(error == true) {
+                reject('error has occured');
+            } else {
+                resolve();
+            }
+
+        }, 2000);
+    });
+}
+
+async function init() {
+    await addBlogPost({title: 'third blog post', content: 'content for the blog post three'});
+
+    blogRequest();
+}
+
+init();
