@@ -4,7 +4,9 @@ async function fetchData() {
     const apiRes = await fetch('https://jsonplaceholder.typicode.com/users');
     const data = await apiRes.json();
 
-    console.log(data);
+    const pincode = data.map((zip) => {
+        document.querySelector('ul').innerHTML += `<li>${zip.address.zipcode}</li>`;
+    })
 }
 
 fetchData();
