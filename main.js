@@ -38,4 +38,4 @@ function addBlogPost(addPost) {
     });
 }
 
-addBlogPost({name: 'third blog post', content: 'content for the blog post three'}).then(blogRequest);
+addBlogPost({name: 'third blog post', content: 'content for the blog post three'}).then(blogRequest).catch(err => console.log(err));
