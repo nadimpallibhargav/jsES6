@@ -7,4 +7,4 @@ let person = {
 
 person = JSON.stringify(person);
 
-console.log(person);
+console.log(person.name);
