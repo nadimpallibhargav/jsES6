@@ -21,11 +21,21 @@ function blogRequest() {
     }, 1000);
 }
 
-function addBlogPost(addPost, blogRequestCallBack) {
-    setTimeout(() => {
-        blogPosts.push(addPost);
-        blogRequestCallBack();
-    }, 2000);
+function addBlogPost(addPost) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            blogPosts.push(addPost);
+
+            const error = true;
+
+            if(error == true) {
+                reject('error hs occured');
+            } else {
+                resolve();
+            }
+
+        }, 2000);
+    });
 }
 
-addBlogPost({name: 'third blog post', content: 'content for the blog post three'}, blogRequest);
+addBlogPost({name: 'third blog post', content: 'content for the blog post three'}).then(blogRequest);
