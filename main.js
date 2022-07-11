@@ -8,7 +8,7 @@ function getUpdates() {
         console.log(serverResponse);
         }
     };
-    xhttp.open("GET", "http://localhost:5502/people.json", true);   
+    xhttp.open("GET", "https://nadimpallibhargav.github.io/jsES6/people.json", true);   
     xhttp.send();                                                   
 }
 
